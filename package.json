@@ -1,0 +1,28 @@
+{
+  "name": "digital-footprint-academy",
+  "version": "1.0.0",
+  "description": "Educational website for digital footprint awareness and management",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "digital footprint",
+    "privacy",
+    "social media",
+    "cybersecurity",
+    "education",
+    "teenagers",
+    "online safety"
+  ],
+  "author": "Digital Footprint Academy",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.2.0"
+  }
+}

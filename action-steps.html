@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Steps - Digital Footprint Management | DigitalGuard</title>
+    <meta name="description" content="Complete action plan to manage your digital footprint. Interactive checklist with progress tracking and personalized recommendations.">
+    <meta name="keywords" content="digital footprint action plan, online privacy checklist, social media cleanup, digital reputation management">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="canonical" href="/action-steps">
+</head>
+<body class="page-content">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>DigitalGuard</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Learn <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/what-is-digital-footprint" class="dropdown-link">What is Digital Footprint</a>
+                        <a href="/how-its-formed" class="dropdown-link">How It's Formed</a>
+                        <a href="/consequences" class="dropdown-link">Consequences</a>
+                        <a href="/data-storage" class="dropdown-link">Data Storage</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Manage <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/how-to-manage" class="dropdown-link">How to Manage</a>
+                        <a href="/cleanup-guide" class="dropdown-link">Cleanup Guide</a>
+                        <a href="/social-media-guide" class="dropdown-link">Social Media Guide</a>
+                    </div>
+                </div>
+                <a href="/action-steps" class="nav-link active">Action Steps</a>
+                <a href="/tools" class="nav-link">Tools</a>
+                <a href="/resources" class="nav-link">Resources</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Action Steps</span>
+                </div>
+                <h1>Digital Footprint Action Plan</h1>
+                <p>Your complete step-by-step guide to taking control of your digital presence</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-layout">
+                    <div class="main-content-area">
+                        <!-- Introduction -->
+                        <div class="content-block">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Action Plan" class="content-image">
+                            <h2>Your Personal Action Plan</h2>
+                            <p>Follow this comprehensive action plan to systematically improve your digital footprint. Each task is designed to enhance your online privacy and reputation. Your progress is automatically saved and resets weekly to encourage regular maintenance.</p>
+                            
+                            <div class="highlight-box">
+                                <i class="fas fa-info-circle"></i>
+                                <p><strong>Progress Tracking:</strong> Your progress is saved based on your IP address and resets every week to encourage regular digital hygiene maintenance.</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Overview -->
+                        <div class="content-block">
+                            <div class="progress-overview">
+                                <h3>Your Progress</h3>
+                                <div class="progress-stats">
+                                    <div class="progress-stat">
+                                        <div class="stat-number" id="completed-count">0</div>
+                                        <div class="stat-label">Tasks Completed</div>
+                                    </div>
+                                    <div class="progress-stat">
+                                        <div class="stat-number" id="total-count">42</div>
+                                        <div class="stat-label">Total Tasks</div>
+                                    </div>
+                                    <div class="progress-stat">
+                                        <div class="stat-number" id="completion-percentage">0%</div>
+                                        <div class="stat-label">Complete</div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="main-progress-fill"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-message" id="progress-message">
+                                    Ready to start your digital footprint journey!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Steps -->
+                        <div class="content-block">
+                            <h2>Complete Action Checklist</h2>
+                            
+                            <div class="action-phases">
+                                <!-- Phase 1: Assessment -->
+                                <div class="phase-section">
+                                    <div class="phase-header">
+                                        <i class="fas fa-search"></i>
+                                        <h3>Phase 1: Digital Footprint Assessment</h3>
+                                        <div class="phase-progress">
+                                            <span class="phase-count" id="phase1-count">0/8</span>
+                                            <div class="phase-bar">
+                                                <div class="phase-fill" id="phase1-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phase-tasks">
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Google Yourself</h4>
+                                                <p>Search for your full name in quotes on Google and review the first 3 pages of results</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Image Search Check</h4>
+                                                <p>Search for your name in Google Images and review all photos that appear</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Social Media Audit</h4>
+                                                <p>List all your social media accounts and note which ones are public vs private</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Check Alternative Search Engines</h4>
+                                                <p>Search for yourself on Bing, Yahoo, and DuckDuckGo to see different results</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Identify Problem Content</h4>
+                                                <p>Make a list of any inappropriate or concerning content you found about yourself</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Check Data Broker Sites</h4>
+                                                <p>Search for yourself on Spokeo, WhitePages, and other people search engines</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Review Professional Presence</h4>
+                                                <p>Check your LinkedIn profile and any professional networking sites</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="1">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Document Findings</h4>
+                                                <p>Create a document listing all platforms where you have a presence</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Phase 2: Privacy Settings -->
+                                <div class="phase-section">
+                                    <div class="phase-header">
+                                        <i class="fas fa-cog"></i>
+                                        <h3>Phase 2: Privacy Settings Optimization</h3>
+                                        <div class="phase-progress">
+                                            <span class="phase-count" id="phase2-count">0/10</span>
+                                            <div class="phase-bar">
+                                                <div class="phase-fill" id="phase2-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phase-tasks">
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Facebook Privacy Settings</h4>
+                                                <p>Set posts to "Friends only", limit past posts, and enable timeline review</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Instagram Privacy Settings</h4>
+                                                <p>Switch to private account, hide story from unwanted viewers, turn off activity status</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Twitter/X Privacy Settings</h4>
+                                                <p>Protect tweets, disable photo tagging, turn off location information</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>TikTok Privacy Settings</h4>
+                                                <p>Set account to private, disable downloads, restrict comments to friends</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Google Privacy Settings</h4>
+                                                <p>Visit myaccount.google.com and review all privacy and data settings</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>YouTube Privacy Settings</h4>
+                                                <p>Set videos to unlisted/private, clear watch history, disable location for uploads</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>LinkedIn Privacy Settings</h4>
+                                                <p>Control who can see your connections, activity, and profile information</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Snapchat Privacy Settings</h4>
+                                                <p>Set who can contact you, view your story, and see your location</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Discord Privacy Settings</h4>
+                                                <p>Review server memberships, direct message settings, and friend requests</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="2">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Browser Privacy Settings</h4>
+                                                <p>Configure privacy settings in Chrome, Firefox, Safari, or your preferred browser</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Phase 3: Content Cleanup -->
+                                <div class="phase-section">
+                                    <div class="phase-header">
+                                        <i class="fas fa-broom"></i>
+                                        <h3>Phase 3: Content Cleanup</h3>
+                                        <div class="phase-progress">
+                                            <span class="phase-count" id="phase3-count">0/12</span>
+                                            <div class="phase-bar">
+                                                <div class="phase-fill" id="phase3-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phase-tasks">
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Delete Inappropriate Facebook Posts</h4>
+                                                <p>Use Activity Log to find and delete posts with inappropriate content or language</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Clean Up Instagram Posts</h4>
+                                                <p>Archive or delete inappropriate photos and videos from your Instagram feed</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Delete Old Tweets</h4>
+                                                <p>Review and delete controversial or inappropriate tweets from your Twitter history</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Remove TikTok Videos</h4>
+                                                <p>Delete any TikTok videos that could be seen as inappropriate or unprofessional</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Clean YouTube Comments</h4>
+                                                <p>Review and delete inappropriate comments you've made on YouTube videos</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Remove Tagged Photos</h4>
+                                                <p>Ask friends to remove inappropriate photos where you're tagged, or remove tags yourself</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Clean Up Reddit History</h4>
+                                                <p>Review and delete controversial posts and comments on Reddit</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Review Forum Posts</h4>
+                                                <p>Check any forums or discussion boards where you've posted and clean up old content</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Update Profile Pictures</h4>
+                                                <p>Replace inappropriate profile pictures with professional or appropriate photos</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Clean Up Bio/About Sections</h4>
+                                                <p>Update all bio and about sections to be professional and appropriate</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Review Email Signatures</h4>
+                                                <p>Update email signatures to be professional and remove inappropriate quotes</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="3">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Clean Up Usernames</h4>
+                                                <p>Change inappropriate usernames to more professional alternatives where possible</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Phase 4: Security Enhancement -->
+                                <div class="phase-section">
+                                    <div class="phase-header">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <h3>Phase 4: Security Enhancement</h3>
+                                        <div class="phase-progress">
+                                            <span class="phase-count" id="phase4-count">0/8</span>
+                                            <div class="phase-bar">
+                                                <div class="phase-fill" id="phase4-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phase-tasks">
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Enable Two-Factor Authentication</h4>
+                                                <p>Set up 2FA on all important accounts (email, social media, banking)</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Update All Passwords</h4>
+                                                <p>Create strong, unique passwords for each account using a password manager</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Review App Permissions</h4>
+                                                <p>Check what permissions you've granted to apps and revoke unnecessary access</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Check Data Breaches</h4>
+                                                <p>Use Have I Been Pwned to check if your email was in any data breaches</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Secure Email Accounts</h4>
+                                                <p>Enable security features and review forwarding rules in all email accounts</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Review Connected Apps</h4>
+                                                <p>Check which third-party apps have access to your social media accounts</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Update Recovery Information</h4>
+                                                <p>Ensure recovery emails and phone numbers are current and secure</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="4">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Review Login Activity</h4>
+                                                <p>Check recent login activity on all accounts for suspicious access</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Phase 5: Positive Content Creation -->
+                                <div class="phase-section">
+                                    <div class="phase-header">
+                                        <i class="fas fa-plus"></i>
+                                        <h3>Phase 5: Positive Content Creation</h3>
+                                        <div class="phase-progress">
+                                            <span class="phase-count" id="phase5-count">0/8</span>
+                                            <div class="phase-bar">
+                                                <div class="phase-fill" id="phase5-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phase-tasks">
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Create Professional LinkedIn Profile</h4>
+                                                <p>Build a complete LinkedIn profile showcasing your skills and achievements</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Share Academic Achievements</h4>
+                                                <p>Post about awards, good grades, academic projects, and educational milestones</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Document Volunteer Work</h4>
+                                                <p>Share photos and posts about community service and volunteer activities</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Showcase Creative Projects</h4>
+                                                <p>Share your artwork, writing, music, or other creative accomplishments</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Post About Hobbies and Interests</h4>
+                                                <p>Share appropriate content about your hobbies, sports, and positive interests</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Engage Positively with Others</h4>
+                                                <p>Like, comment, and share positive content from friends and organizations</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Write Thoughtful Reviews</h4>
+                                                <p>Leave helpful, constructive reviews for products, services, and experiences</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="5">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Consider Creating a Personal Website</h4>
+                                                <p>Build a simple personal website or portfolio to control your online narrative</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Phase 6: Monitoring and Maintenance -->
+                                <div class="phase-section">
+                                    <div class="phase-header">
+                                        <i class="fas fa-bell"></i>
+                                        <h3>Phase 6: Monitoring and Maintenance</h3>
+                                        <div class="phase-progress">
+                                            <span class="phase-count" id="phase6-count">0/6</span>
+                                            <div class="phase-bar">
+                                                <div class="phase-fill" id="phase6-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phase-tasks">
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="6">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Set Up Google Alerts</h4>
+                                                <p>Create Google Alerts for your name to monitor new mentions online</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="6">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Schedule Monthly Reviews</h4>
+                                                <p>Set calendar reminders to review your digital footprint monthly</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="6">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Install Our Browser Extension</h4>
+                                                <p>Download and install the DigitalGuard browser extension for ongoing monitoring</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="6">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Educate Friends and Family</h4>
+                                                <p>Share digital footprint awareness with friends and family members</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="6">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Create a Digital Will</h4>
+                                                <p>Plan for your digital assets and accounts in case of emergency</p>
+                                            </div>
+                                        </label>
+                                        
+                                        <label class="task-item">
+                                            <input type="checkbox" class="task-checkbox" data-phase="6">
+                                            <span class="task-checkmark"></span>
+                                            <div class="task-content">
+                                                <h4>Final Assessment</h4>
+                                                <p>Google yourself again and compare results to your initial assessment</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Completion Celebration -->
+                        <div class="content-block">
+                            <div class="completion-section" id="completion-section" style="display: none;">
+                                <div class="completion-content">
+                                    <div class="completion-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <h3>Congratulations! 🎉</h3>
+                                    <p>You've completed your digital footprint action plan! Your online presence is now much more secure and professional.</p>
+                                    <div class="completion-stats">
+                                        <div class="completion-stat">
+                                            <strong>Tasks Completed:</strong> <span id="final-task-count">42</span>
+                                        </div>
+                                        <div class="completion-stat">
+                                            <strong>Time Invested:</strong> <span id="estimated-time-spent">4-6 hours</span>
+                                        </div>
+                                        <div class="completion-stat">
+                                            <strong>Next Reset:</strong> <span id="next-reset-date">In 7 days</span>
+                                        </div>
+                                    </div>
+                                    <div class="completion-actions">
+                                        <a href="/tools" class="btn btn-primary">
+                                            <i class="fas fa-tools"></i>
+                                            Use Our Tools
+                                        </a>
+                                        <a href="/resources" class="btn btn-secondary">
+                                            <i class="fas fa-book"></i>
+                                            Continue Learning
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tips and Reminders -->
+                        <div class="content-block">
+                            <div class="tips-section">
+                                <h3>Tips for Success</h3>
+                                <div class="tips-grid">
+                                    <div class="tip-card">
+                                        <i class="fas fa-clock"></i>
+                                        <h4>Take Your Time</h4>
+                                        <p>Don't rush through the checklist. Quality cleanup is better than speed.</p>
+                                    </div>
+                                    <div class="tip-card">
+                                        <i class="fas fa-calendar"></i>
+                                        <h4>Break It Down</h4>
+                                        <p>Complete one phase at a time over several days if needed.</p>
+                                    </div>
+                                    <div class="tip-card">
+                                        <i class="fas fa-users"></i>
+                                        <h4>Ask for Help</h4>
+                                        <p>Don't hesitate to ask friends or family to help remove tagged content.</p>
+                                    </div>
+                                    <div class="tip-card">
+                                        <i class="fas fa-repeat"></i>
+                                        <h4>Make It a Habit</h4>
+                                        <p>Regular maintenance is key to keeping your digital footprint clean.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <div class="sidebar-card">
+                            <h3>Progress Summary</h3>
+                            <div class="progress-summary">
+                                <div class="summary-item">
+                                    <span class="summary-label">Assessment:</span>
+                                    <span class="summary-value" id="phase1-summary">0/8</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Privacy:</span>
+                                    <span class="summary-value" id="phase2-summary">0/10</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Cleanup:</span>
+                                    <span class="summary-value" id="phase3-summary">0/12</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Security:</span>
+                                    <span class="summary-value" id="phase4-summary">0/8</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Content:</span>
+                                    <span class="summary-value" id="phase5-summary">0/8</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Monitoring:</span>
+                                    <span class="summary-value" id="phase6-summary">0/6</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Quick Actions</h3>
+                            <ul class="related-links">
+                                <li><a href="/tools"><i class="fas fa-arrow-right"></i> Use Assessment Tools</a></li>
+                                <li><a href="/cleanup-guide"><i class="fas fa-arrow-right"></i> Detailed Cleanup Guide</a></li>
+                                <li><a href="/social-media-guide"><i class="fas fa-arrow-right"></i> Social Media Settings</a></li>
+                                <li><a href="/resources"><i class="fas fa-arrow-right"></i> Additional Resources</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Weekly Reset</h3>
+                            <p>Your progress automatically resets every week to encourage regular digital hygiene maintenance.</p>
+                            <div class="reset-info">
+                                <strong>Last Reset:</strong> <span id="last-reset-date">Loading...</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>DigitalGuard</span>
+                    </div>
+                    <p>Empowering users to take control of their digital footprints and protect their online privacy.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="/what-is-digital-footprint">What is Digital Footprint</a></li>
+                        <li><a href="/how-its-formed">How It's Formed</a></li>
+                        <li><a href="/consequences">Consequences</a></li>
+                        <li><a href="/data-storage">Data Storage</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Manage</h4>
+                    <ul>
+                        <li><a href="/how-to-manage">How to Manage</a></li>
+                        <li><a href="/cleanup-guide">Cleanup Guide</a></li>
+                        <li><a href="/social-media-guide">Social Media Guide</a></li>
+                        <li><a href="/action-steps">Action Steps</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Important Resources</h4>
+                    <ul>
+                        <li><a href="https://www.stopbullying.gov" target="_blank" rel="noopener">StopBullying.gov</a></li>
+                        <li><a href="https://www.privacyrights.org" target="_blank" rel="noopener">Privacy Rights</a></li>
+                        <li><a href="https://www.commonsensemedia.org" target="_blank" rel="noopener">Common Sense Media</a></li>
+                        <li><a href="/tools">Privacy Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DigitalGuard. All rights reserved. | Protecting your digital privacy.</p>
+              <p>Made with ❤ by Mayank Raj</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="utils/storage.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script>
+        // Action Steps functionality with IP-based storage
+        let ipStorage;
+        
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Initialize IP-based storage
+            ipStorage = new IPStorage();
+            await ipStorage.init();
+            
+            const checkboxes = document.querySelectorAll('.task-checkbox');
+            
+            // Load saved progress
+            const savedProgress = ipStorage.loadProgress();
+            if (savedProgress) {
+                checkboxes.forEach((checkbox, index) => {
+                    if (savedProgress[index]) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
+            
+            // Add event listeners
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateProgress);
+            });
+            
+            // Initial progress update
+            updateProgress();
+            updateLastResetDate();
+        });
+        
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.task-checkbox');
+            const totalTasks = checkboxes.length;
+            const completedTasks = document.querySelectorAll('.task-checkbox:checked').length;
+            const percentage = Math.round((completedTasks / totalTasks) * 100);
+            
+            // Update main progress
+            document.getElementById('completed-count').textContent = completedTasks;
+            document.getElementById('total-count').textContent = totalTasks;
+            document.getElementById('completion-percentage').textContent = percentage + '%';
+            document.getElementById('main-progress-fill').style.width = percentage + '%';
+            
+            // Update phase progress
+            for (let phase = 1; phase <= 6; phase++) {
+                updatePhaseProgress(phase);
+            }
+            
+            // Update progress message
+            updateProgressMessage(percentage);
+            
+            // Show completion section if 100%
+            const completionSection = document.getElementById('completion-section');
+            if (percentage === 100) {
+                completionSection.style.display = 'block';
+                document.getElementById('final-task-count').textContent = totalTasks;
+            } else {
+                completionSection.style.display = 'none';
+            }
+            
+            // Save progress
+            const progressData = Array.from(checkboxes).map(cb => cb.checked);
+            ipStorage.saveProgress(progressData);
+        }
+        
+        function updatePhaseProgress(phaseNumber) {
+            const phaseCheckboxes = document.querySelectorAll(`[data-phase="${phaseNumber}"]`);
+            const phaseCompleted = document.querySelectorAll(`[data-phase="${phaseNumber}"]:checked`).length;
+            const phaseTotal = phaseCheckboxes.length;
+            const phasePercentage = Math.round((phaseCompleted / phaseTotal) * 100);
+            
+            // Update phase counter
+            const phaseCount = document.getElementById(`phase${phaseNumber}-count`);
+            if (phaseCount) {
+                phaseCount.textContent = `${phaseCompleted}/${phaseTotal}`;
+            }
+            
+            // Update phase progress bar
+            const phaseFill = document.getElementById(`phase${phaseNumber}-fill`);
+            if (phaseFill) {
+                phaseFill.style.width = phasePercentage + '%';
+            }
+            
+            // Update sidebar summary
+            const phaseSummary = document.getElementById(`phase${phaseNumber}-summary`);
+            if (phaseSummary) {
+                phaseSummary.textContent = `${phaseCompleted}/${phaseTotal}`;
+            }
+        }
+        
+        function updateProgressMessage(percentage) {
+            const progressMessage = document.getElementById('progress-message');
+            const messages = [
+                "Ready to start your digital footprint journey!",
+                "Great start! You're building momentum!",
+                "Excellent progress! Keep going!",
+                "You're halfway there! Amazing work!",
+                "Almost finished! The end is in sight!",
+                "Outstanding! You're a digital footprint expert now!"
+            ];
+            
+            let messageIndex = Math.floor(percentage / 20);
+            if (messageIndex >= messages.length) messageIndex = messages.length - 1;
+            
+            progressMessage.textContent = messages[messageIndex];
+        }
+        
+        function updateLastResetDate() {
+            const lastResetElement = document.getElementById('last-reset-date');
+            const lastReset = localStorage.getItem('lastResetDate');
+            
+            if (lastReset && lastResetElement) {
+                const resetDate = new Date(parseInt(lastReset));
+                lastResetElement.textContent = resetDate.toLocaleDateString();
+            } else if (lastResetElement) {
+                lastResetElement.textContent = 'Today';
+            }
+        }
+    </script>
+</body>
+</html>

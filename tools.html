@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Footprint Tools - DigitalGuard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-content">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>DigitalGuard</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Learn <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/what-is-digital-footprint" class="dropdown-link">What is Digital Footprint</a>
+                        <a href="/how-its-formed" class="dropdown-link">How It's Formed</a>
+                        <a href="/consequences" class="dropdown-link">Consequences</a>
+                        <a href="/data-storage" class="dropdown-link">Data Storage</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Manage <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/how-to-manage" class="dropdown-link">How to Manage</a>
+                        <a href="/cleanup-guide" class="dropdown-link">Cleanup Guide</a>
+                        <a href="/social-media-guide" class="dropdown-link">Social Media Guide</a>
+                    </div>
+                </div>
+                <a href="/action-steps" class="nav-link">Action Steps</a>
+                <a href="/tools" class="nav-link active">Tools</a>
+                <a href="/resources" class="nav-link">Resources</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Tools</span>
+                </div>
+                <h1>Digital Footprint Tools</h1>
+                <p>Interactive tools to assess, monitor, and improve your digital presence</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-layout">
+                    <div class="main-content-area">
+                        <!-- Introduction -->
+                        <div class="content-block">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Digital Tools" class="content-image">
+                            <h2>Assess and Improve Your Digital Footprint</h2>
+                            <p>Use these interactive tools to understand your current digital presence, identify areas for improvement, and take action to protect your online reputation.</p>
+                            
+                            <div class="highlight-box">
+                                <i class="fas fa-shield-alt"></i>
+                                <p><strong>Privacy First:</strong> All tools run locally in your browser. We don't collect or store any of your personal information.</p>
+                            </div>
+                        </div>
+
+                        <!-- Featured Extension -->
+                        <div class="content-block">
+                            <div class="extension-showcase">
+                                <div class="extension-header">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <h2>DigitalGuard Browser Extension</h2>
+                                    <div class="extension-badge">
+                                        <span class="badge-new">New</span>
+                                        <span class="badge-featured">Featured Tool</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="extension-description">
+                                    <p>Our powerful browser extension helps you manage and monitor your digital footprint in real-time. Get instant insights about your online activity and receive personalized tips for safer browsing.</p>
+                                </div>
+                                
+                                <div class="extension-features">
+                                    <h3>What Our Extension Does:</h3>
+                                    <div class="feature-grid">
+                                        <div class="feature-item">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h4>Activity Monitoring</h4>
+                                            <p>Tracks your online activity and shows how visible your data is across different platforms.</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            <h4>Risk Detection</h4>
+                                            <p>Highlights risky posts or shared data that could impact your digital reputation.</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-cog"></i>
+                                            <h4>Quick Privacy Access</h4>
+                                            <p>Provides instant access to privacy settings across all major social media platforms.</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <h4>Educational Pop-ups</h4>
+                                            <p>Shows helpful tips and reminders about digital hygiene and safe online behavior.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="extension-versions">
+                                    <div class="version-comparison">
+                                        <div class="version-card basic">
+                                            <div class="version-header">
+                                                <h4>Version 1 - Basic</h4>
+                                                <div class="version-price">Free</div>
+                                            </div>
+                                            <div class="version-features">
+                                                <ul>
+                                                    <li><i class="fas fa-check"></i> Core tracking of online footprint</li>
+                                                    <li><i class="fas fa-check"></i> Basic notifications and reminders</li>
+                                                    <li><i class="fas fa-check"></i> Limited access to educational tips</li>
+                                                    <li><i class="fas fa-check"></i> Privacy settings shortcuts</li>
+                                                </ul>
+                                            </div>
+                                            <button class="btn btn-outline extension-btn" onclick="downloadExtension('basic')">
+                                                <i class="fas fa-download"></i>
+                                                Download Free
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="version-card premium">
+                                            <div class="version-header">
+                                                <h4>Version 2 - Premium</h4>
+                                                <div class="version-price">$4.99/month</div>
+                                            </div>
+                                            <div class="version-features">
+                                                <ul>
+                                                    <li><i class="fas fa-check"></i> All features of Version 1</li>
+                                                    <li><i class="fas fa-check"></i> Advanced monitoring tools</li>
+                                                    <li><i class="fas fa-check"></i> Detailed insights and reports</li>
+                                                    <li><i class="fas fa-check"></i> Personalized guidance and tutorials</li>
+                                                    <li><i class="fas fa-check"></i> Real-time risk assessment</li>
+                                                    <li><i class="fas fa-check"></i> Priority customer support</li>
+                                                </ul>
+                                            </div>
+                                            <button class="btn btn-primary extension-btn" onclick="downloadExtension('premium')">
+                                                <i class="fas fa-crown"></i>
+                                                Get Premium
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="extension-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-number">50,000+</div>
+                                        <div class="stat-label">Active Users</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">4.8/5</div>
+                                        <div class="stat-label">User Rating</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">1M+</div>
+                                        <div class="stat-label">Risks Detected</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Yourself Challenge -->
+                        <div class="content-block">
+                            <div class="tool-section">
+                                <div class="tool-header">
+                                    <i class="fas fa-search"></i>
+                                    <h2>Google Yourself Challenge</h2>
+                                </div>
+                                <p>The most important step in managing your digital footprint is knowing what's out there. This tool guides you through a comprehensive search of your online presence.</p>
+                                
+                                <div class="google-challenge">
+                                    <div class="challenge-step">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4>Enter Your Information</h4>
+                                            <div class="input-group">
+                                                <input type="text" id="full-name" placeholder="Your full name" class="tool-input">
+                                                <input type="text" id="location" placeholder="Your city/state (optional)" class="tool-input">
+                                                <input type="text" id="school" placeholder="Your school (optional)" class="tool-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="challenge-step">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4>Search Variations</h4>
+                                            <div class="search-buttons" id="search-buttons">
+                                                <button class="search-btn" onclick="performSearch('exact')">
+                                                    <i class="fab fa-google"></i>
+                                                    Search Exact Name
+                                                </button>
+                                                <button class="search-btn" onclick="performSearch('location')">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    Search with Location
+                                                </button>
+                                                <button class="search-btn" onclick="performSearch('school')">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                    Search with School
+                                                </button>
+                                                <button class="search-btn" onclick="performSearch('images')">
+                                                    <i class="fas fa-images"></i>
+                                                    Search Images
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="challenge-step">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h4>Assessment Checklist</h4>
+                                            <div class="assessment-checklist">
+                                                <label class="assessment-item">
+                                                    <input type="checkbox" class="assessment-checkbox">
+                                                    <span class="checkmark"></span>
+                                                    Found social media profiles
+                                                </label>
+                                                <label class="assessment-item">
+                                                    <input type="checkbox" class="assessment-checkbox">
+                                                    <span class="checkmark"></span>
+                                                    Found inappropriate content
+                                                </label>
+                                                <label class="assessment-item">
+                                                    <input type="checkbox" class="assessment-checkbox">
+                                                    <span class="checkmark"></span>
+                                                    Found positive/professional content
+                                                </label>
+                                                <label class="assessment-item">
+                                                    <input type="checkbox" class="assessment-checkbox">
+                                                    <span class="checkmark"></span>
+                                                    Found photos I didn't know were online
+                                                </label>
+                                                <label class="assessment-item">
+                                                    <input type="checkbox" class="assessment-checkbox">
+                                                    <span class="checkmark"></span>
+                                                    Found old accounts I forgot about
+                                                </label>
+                                            </div>
+                                            <div class="assessment-result" id="assessment-result"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Checkup Tool -->
+                        <div class="content-block">
+                            <div class="tool-section">
+                                <div class="tool-header">
+                                    <i class="fas fa-user-shield"></i>
+                                    <h2>Social Media Privacy Checkup</h2>
+                                </div>
+                                <p>Evaluate your privacy settings across major social media platforms and get personalized recommendations.</p>
+                                
+                                <div class="privacy-checkup">
+                                    <div class="platform-checkup">
+                                        <h3><i class="fab fa-facebook"></i> Facebook</h3>
+                                        <div class="privacy-questions">
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="facebook">
+                                                <span class="checkmark"></span>
+                                                Posts are set to "Friends" only
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="facebook">
+                                                <span class="checkmark"></span>
+                                                Limited past posts visibility
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="facebook">
+                                                <span class="checkmark"></span>
+                                                Timeline review is enabled
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="facebook">
+                                                <span class="checkmark"></span>
+                                                Limited who can find you by email/phone
+                                            </label>
+                                        </div>
+                                        <div class="platform-score" id="facebook-score">Score: 0/4</div>
+                                    </div>
+                                    
+                                    <div class="platform-checkup">
+                                        <h3><i class="fab fa-instagram"></i> Instagram</h3>
+                                        <div class="privacy-questions">
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="instagram">
+                                                <span class="checkmark"></span>
+                                                Account is set to private
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="instagram">
+                                                <span class="checkmark"></span>
+                                                Story is hidden from unwanted viewers
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="instagram">
+                                                <span class="checkmark"></span>
+                                                Activity status is turned off
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="instagram">
+                                                <span class="checkmark"></span>
+                                                Comments are filtered/restricted
+                                            </label>
+                                        </div>
+                                        <div class="platform-score" id="instagram-score">Score: 0/4</div>
+                                    </div>
+                                    
+                                    <div class="platform-checkup">
+                                        <h3><i class="fab fa-twitter"></i> Twitter/X</h3>
+                                        <div class="privacy-questions">
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="twitter">
+                                                <span class="checkmark"></span>
+                                                Tweets are protected (private)
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="twitter">
+                                                <span class="checkmark"></span>
+                                                Photo tagging is disabled
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="twitter">
+                                                <span class="checkmark"></span>
+                                                Location information is turned off
+                                            </label>
+                                            <label class="privacy-question">
+                                                <input type="checkbox" class="privacy-checkbox" data-platform="twitter">
+                                                <span class="checkmark"></span>
+                                                Discoverability by email/phone is disabled
+                                            </label>
+                                        </div>
+                                        <div class="platform-score" id="twitter-score">Score: 0/4</div>
+                                    </div>
+                                    
+                                    <div class="privacy-summary">
+                                        <h3>Overall Privacy Score</h3>
+                                        <div class="overall-score" id="overall-score">0/12</div>
+                                        <div class="score-message" id="score-message">Complete the checkup to see your privacy score!</div>
+                                        <div class="recommendations" id="recommendations"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Digital Footprint Quiz -->
+                        <div class="content-block">
+                            <div class="tool-section">
+                                <div class="tool-header">
+                                    <i class="fas fa-question-circle"></i>
+                                    <h2>Digital Footprint Knowledge Quiz</h2>
+                                </div>
+                                <p>Test your knowledge about digital footprints and online privacy with this interactive quiz.</p>
+                                
+                                <div class="quiz-container" id="quiz-container">
+                                    <div class="quiz-question" id="quiz-question">
+                                        <h4>Question 1 of 10</h4>
+                                        <p>What percentage of employers check social media profiles before hiring?</p>
+                                        <div class="quiz-options">
+                                            <button class="quiz-option" onclick="selectAnswer(0, 'A')">A) 30%</button>
+                                            <button class="quiz-option" onclick="selectAnswer(0, 'B')">B) 50%</button>
+                                            <button class="quiz-option" onclick="selectAnswer(0, 'C')">C) 70%</button>
+                                            <button class="quiz-option" onclick="selectAnswer(0, 'D')">D) 90%</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="quiz-navigation">
+                                        <button class="quiz-nav-btn" id="prev-btn" onclick="previousQuestion()" disabled>Previous</button>
+                                        <button class="quiz-nav-btn" id="next-btn" onclick="nextQuestion()" disabled>Next</button>
+                                        <button class="quiz-nav-btn" id="finish-btn" onclick="finishQuiz()" style="display: none;">Finish Quiz</button>
+                                    </div>
+                                    
+                                    <div class="quiz-progress">
+                                        <div class="quiz-progress-bar">
+                                            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                                        </div>
+                                        <div class="quiz-progress-text" id="quiz-progress-text">1 of 10</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="quiz-results" id="quiz-results" style="display: none;">
+                                    <h3>Quiz Complete!</h3>
+                                    <div class="quiz-score" id="quiz-score">Your Score: 0/10</div>
+                                    <div class="quiz-feedback" id="quiz-feedback"></div>
+                                    <button class="btn btn-primary" onclick="restartQuiz()">Take Quiz Again</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password Strength Checker -->
+                        <div class="content-block">
+                            <div class="tool-section">
+                                <div class="tool-header">
+                                    <i class="fas fa-key"></i>
+                                    <h2>Password Strength Checker</h2>
+                                </div>
+                                <p>Check the strength of your passwords and get tips for creating secure passwords.</p>
+                                
+                                <div class="password-checker">
+                                    <div class="password-input-group">
+                                        <input type="password" id="password-input" placeholder="Enter a password to check" class="tool-input">
+                                        <button class="toggle-password" onclick="togglePasswordVisibility()">
+                                            <i class="fas fa-eye" id="password-eye"></i>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="password-strength" id="password-strength">
+                                        <div class="strength-bar">
+                                            <div class="strength-fill" id="strength-fill"></div>
+                                        </div>
+                                        <div class="strength-text" id="strength-text">Enter a password</div>
+                                    </div>
+                                    
+                                    <div class="password-criteria">
+                                        <h4>Password Requirements:</h4>
+                                        <div class="criteria-list">
+                                            <div class="criteria-item" id="length-criteria">
+                                                <i class="fas fa-times"></i>
+                                                At least 8 characters
+                                            </div>
+                                            <div class="criteria-item" id="uppercase-criteria">
+                                                <i class="fas fa-times"></i>
+                                                Contains uppercase letter
+                                            </div>
+                                            <div class="criteria-item" id="lowercase-criteria">
+                                                <i class="fas fa-times"></i>
+                                                Contains lowercase letter
+                                            </div>
+                                            <div class="criteria-item" id="number-criteria">
+                                                <i class="fas fa-times"></i>
+                                                Contains number
+                                            </div>
+                                            <div class="criteria-item" id="special-criteria">
+                                                <i class="fas fa-times"></i>
+                                                Contains special character
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="password-tips">
+                                        <h4>Password Tips:</h4>
+                                        <ul>
+                                            <li>Use a unique password for each account</li>
+                                            <li>Consider using a password manager</li>
+                                            <li>Use passphrases with random words</li>
+                                            <li>Enable two-factor authentication</li>
+                                            <li>Avoid personal information in passwords</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- External Tools -->
+                        <div class="content-block">
+                            <h2>Recommended External Tools</h2>
+                            
+                            <div class="external-tools">
+                                <div class="tool-category">
+                                    <h3><i class="fas fa-search"></i> Search & Monitoring</h3>
+                                    <div class="tool-grid">
+                                        <div class="external-tool">
+                                            <h4>Google Alerts</h4>
+                                            <p>Get notified when your name appears online</p>
+                                            <a href="https://www.google.com/alerts" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                        <div class="external-tool">
+                                            <h4>Have I Been Pwned</h4>
+                                            <p>Check if your email was in a data breach</p>
+                                            <a href="https://haveibeenpwned.com" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                        <div class="external-tool">
+                                            <h4>Pipl</h4>
+                                            <p>Search for your information across the web</p>
+                                            <a href="https://pipl.com" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tool-category">
+                                    <h3><i class="fas fa-broom"></i> Cleanup Tools</h3>
+                                    <div class="tool-grid">
+                                        <div class="external-tool">
+                                            <h4>TweetDelete</h4>
+                                            <p>Bulk delete old tweets</p>
+                                            <a href="https://tweetdelete.net" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                        <div class="external-tool">
+                                            <h4>Social Book Post Manager</h4>
+                                            <p>Chrome extension for Facebook cleanup</p>
+                                            <a href="https://chrome.google.com/webstore/detail/social-book-post-manager/ljfidlkcmdmmibngdfikhffffdmphjae" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                        <div class="external-tool">
+                                            <h4>Google Takeout</h4>
+                                            <p>Download your Google data</p>
+                                            <a href="https://takeout.google.com" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tool-category">
+                                    <h3><i class="fas fa-shield-alt"></i> Privacy Tools</h3>
+                                    <div class="tool-grid">
+                                        <div class="external-tool">
+                                            <h4>Privacy Checkup (Google)</h4>
+                                            <p>Review your Google privacy settings</p>
+                                            <a href="https://myaccount.google.com/privacycheckup" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                        <div class="external-tool">
+                                            <h4>Facebook Privacy Checkup</h4>
+                                            <p>Review your Facebook privacy settings</p>
+                                            <a href="https://www.facebook.com/privacy/checkup" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                        <div class="external-tool">
+                                            <h4>DeleteMe</h4>
+                                            <p>Professional data removal service</p>
+                                            <a href="https://joindeleteme.com" target="_blank" class="tool-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Visit Tool
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next Steps -->
+                        <div class="content-block">
+                            <div class="next-steps-box">
+                                <h3>Ready to Take Action?</h3>
+                                <p>Now that you've assessed your digital footprint, use our action plan to systematically improve your online presence and privacy.</p>
+                                <div class="next-steps-buttons">
+                                    <a href="/action-steps" class="btn btn-primary">
+                                        <i class="fas fa-list-check"></i>
+                                        Start Action Plan
+                                    </a>
+                                    <a href="/cleanup-guide" class="btn btn-secondary">
+                                        <i class="fas fa-broom"></i>
+                                        Cleanup Guide
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <div class="sidebar-card">
+                            <h3>Tool Summary</h3>
+                            <ul class="fact-list">
+                                <li><i class="fas fa-search"></i> Google Yourself Challenge</li>
+                                <li><i class="fas fa-user-shield"></i> Privacy Checkup</li>
+                                <li><i class="fas fa-question-circle"></i> Knowledge Quiz</li>
+                                <li><i class="fas fa-key"></i> Password Checker</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Quick Actions</h3>
+                            <ul class="related-links">
+                                <li><a href="#google-challenge"><i class="fas fa-arrow-right"></i> Start Google Challenge</a></li>
+                                <li><a href="#privacy-checkup"><i class="fas fa-arrow-right"></i> Check Privacy Settings</a></li>
+                                <li><a href="#quiz"><i class="fas fa-arrow-right"></i> Take Knowledge Quiz</a></li>
+                                <li><a href="#password-checker"><i class="fas fa-arrow-right"></i> Check Password Strength</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h3>Privacy First</h3>
+                            <p>All tools run locally in your browser. We don't collect your data.</p>
+                            <div class="privacy-badge">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>100% Private</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>DigitalGuard</span>
+                    </div>
+                    <p>Empowering users to take control of their digital footprints and protect their online privacy.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="/what-is-digital-footprint">What is Digital Footprint</a></li>
+                        <li><a href="/how-its-formed">How It's Formed</a></li>
+                        <li><a href="/consequences">Consequences</a></li>
+                        <li><a href="/data-storage">Data Storage</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Manage</h4>
+                    <ul>
+                        <li><a href="/how-to-manage">How to Manage</a></li>
+                        <li><a href="/cleanup-guide">Cleanup Guide</a></li>
+                        <li><a href="/social-media-guide">Social Media Guide</a></li>
+                        <li><a href="/action-steps">Action Steps</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Important Resources</h4>
+                    <ul>
+                        <li><a href="https://www.stopbullying.gov" target="_blank" rel="noopener">StopBullying.gov</a></li>
+                        <li><a href="https://www.privacyrights.org" target="_blank" rel="noopener">Privacy Rights</a></li>
+                        <li><a href="https://www.commonsensemedia.org" target="_blank" rel="noopener">Common Sense Media</a></li>
+                        <li><a href="/tools">Privacy Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DigitalGuard. All rights reserved. | Protecting your digital privacy.</p>
+              <p>Made with ❤ by Mayank Raj</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="assets/js/tools.js"></script>
+</body>
+</html>
