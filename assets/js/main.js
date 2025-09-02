@@ -1,21 +1,23 @@
-// Navigation functionality
+import { inject } from "@vercel/analytics";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+inject();
+injectSpeedInsights();
+
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-    // Mobile menu toggle
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
         });
     }
 
-    // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            // Don't close menu for dropdown toggles
             if (!this.classList.contains('dropdown-toggle')) {
                 if (navMenu) {
                     navMenu.classList.remove('active');
@@ -24,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Handle dropdown toggles on mobile
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', function(e) {
             e.preventDefault();
@@ -41,20 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Close mobile menu when clicking outside
     document.addEventListener('click', function(e) {
         if (navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
             navMenu.classList.remove('active');
         }
     });
 
-    // Handle window resize
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             if (navMenu) {
                 navMenu.classList.remove('active');
             }
-            // Reset dropdown styles
             document.querySelectorAll('.dropdown-menu').forEach(menu => {
                 menu.style.position = '';
                 menu.style.opacity = '';
@@ -65,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -82,11 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add scroll animations
     addScrollAnimations();
 });
 
-// Scroll animations
 function addScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
@@ -102,7 +97,6 @@ function addScrollAnimations() {
         });
     }, observerOptions);
     
-    // Observe elements for animation
     const animatedElements = document.querySelectorAll(
         '.quick-action-card, .topic-card, .stat-card, .method-card, .component-card, .importance-card, .scenario-card, .collection-category, .factor-item, .hidden-method'
     );
@@ -115,7 +109,6 @@ function addScrollAnimations() {
     });
 }
 
-// Utility functions
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -128,20 +121,13 @@ function scrollToSection(sectionId) {
         });
     }
 }
-
-// Export functions for use in other modules
 window.scrollToSection = scrollToSection;
 
-// Add loading states for better UX
 document.addEventListener('DOMContentLoaded', function() {
-    // Remove loading class from body if it exists
     document.body.classList.remove('loading');
-    
-    // Add loaded class for CSS animations
     document.body.classList.add('loaded');
 });
 
-// Handle external links
 document.addEventListener('DOMContentLoaded', function() {
     const externalLinks = document.querySelectorAll('a[href^="http"]');
     externalLinks.forEach(link => {
@@ -152,9 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add keyboard navigation support
 document.addEventListener('keydown', function(e) {
-    // ESC key closes mobile menu
     if (e.key === 'Escape') {
         const navMenu = document.getElementById('nav-menu');
         if (navMenu && navMenu.classList.contains('active')) {
@@ -163,7 +147,6 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Performance optimization: Lazy load images
 document.addEventListener('DOMContentLoaded', function() {
     if ('IntersectionObserver' in window) {
         const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -178,18 +161,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-
         document.querySelectorAll('img[data-src]').forEach(img => {
             imageObserver.observe(img);
         });
     }
 });
 
-// Add print styles support
 window.addEventListener('beforeprint', function() {
     document.body.classList.add('printing');
 });
-
 window.addEventListener('afterprint', function() {
     document.body.classList.remove('printing');
 });
